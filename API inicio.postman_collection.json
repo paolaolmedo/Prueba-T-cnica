@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "7fc113b7-f71d-4751-a833-5d728827def7",
+		"name": "API inicio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2501859"
+	},
+	"item": [
+		{
+			"name": "API Signup Usuario existente",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Validar que la respuesta se 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.demoblaze.com/signup?as=as",
+					"protocol": "https",
+					"host": [
+						"api",
+						"demoblaze",
+						"com"
+					],
+					"path": [
+						"signup"
+					],
+					"query": [
+						{
+							"key": "as",
+							"value": "as"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Signup Usuario nuevo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.demoblaze.com/signup",
+					"protocol": "https",
+					"host": [
+						"api",
+						"demoblaze",
+						"com"
+					],
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Login Usuario existente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://hls.demoblaze.com/about_demo_hls_600k00000.ts",
+					"protocol": "https",
+					"host": [
+						"hls",
+						"demoblaze",
+						"com"
+					],
+					"path": [
+						"about_demo_hls_600k00000.ts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Login Usuario no existente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.demoblaze.com/login",
+					"protocol": "https",
+					"host": [
+						"api",
+						"demoblaze",
+						"com"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,4 @@
+1. Herramientas como Postmany SoapUI son adecuadas
+   para realizar pruebas de smoke.
+2. Se debería revisar la conexión con el servidor, ya que está 
+   mostrando error 500.
